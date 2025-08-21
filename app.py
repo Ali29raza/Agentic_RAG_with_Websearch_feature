@@ -1,3 +1,8 @@
+import pysqlite3
+import sys
+sys.modules["sqlite3"] = pysqlite3
+
+
 import os
 import re
 import tempfile
@@ -522,4 +527,5 @@ if st.session_state["uploaded_files"]:
     for file_name, file_info in st.session_state["uploaded_files"].items():
         st.sidebar.write(f"✅ {file_name} (processed: {file_info['processed_at'][:10]})")
 else:
+
     st.sidebar.info("Upload PDF documents to get started with document analysis.")

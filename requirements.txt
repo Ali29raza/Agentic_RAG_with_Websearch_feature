@@ -1,5 +1,5 @@
 streamlit
-pysqlite3-binary>=3.35.0
+pysqlite3-binary
 python-dotenv
 langchain
 langchain-community
@@ -11,5 +11,6 @@ sentence-transformers
 PyPDF2
 pypdf
 google-search-results
+
 
 
